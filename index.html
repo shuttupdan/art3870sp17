@@ -1,8 +1,107 @@
-<html>
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
   <head>
-    <title>Example</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page :: Dan Marquis</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Droid+Serif" rel="stylesheet">
   </head>
   <body>
-    <h1>Donklegondola</h1>
+
+    <div data-sticky-container class="row">
+      <nav class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+        <a href="index.html" class="small-4 columns"><img src="http://placehold.it/350x100"></a>
+        <div class="small-2 medium-4 large-4 columns">&nbsp;</div>
+        <!--<div class="dropdown">-->
+          <a href="portfolio.html"><div class="small-3  medium-2 large-2 columns"><h3 class="navlink">Portfolio</h2></div></a>
+          <a href="about.html"><div class="small-3 medium-2 large-2 columns"><h3 class="navlink">About</h2></div></a>
+        <!--</div>-->
+      </nav>
+
+  </div>
+
+  <main>
+
+    <div class="row">
+      <img src="http://placehold.it/1000x400" class="small-12 columns"><!--banner image-->
+    </div>
+
+    <div class="row">
+      <div class="small-12 medium-8 columns">
+        <!--taken from w3 schools example, to be changed when i know how to do this myself-->
+        <img class="mySlides" src="http://placecorgi.com/250/150" style="width:100%">
+        <img class="mySlides" src="http://placekitten.com/250/150" style="width:100%">
+        <img class="mySlides" src="http://lorempixel.com/250/150" style="width:100%">
+      </div>
+
+        <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 5000); // Change image every 5 seconds
+        }
+        </script>
+
+
+      <div class="small-12 medium-4 columns">
+        <p>Things to figure out:</p>
+        <ul>
+          <li>manual slideshow</li>
+          <li>responsive sandwich menu navigation</li>
+          <li>buttons</li>
+          <li>absolute positioning on portfolio button below</li>
+        </ul>
+        <p>(insert short overview of work here)</p>
+        <div class="row">
+          <div class="large-8 columns">
+            &nbsp
+          </div>
+          <a class="plink" href="portfolio.html"><div class="large-4 columns">
+            <h4>Portfolio</h4>
+          </div></a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="small-6 columns">
+        <p>blah blah blah blah blah bio bio bio blah blah blah</p>
+      </div>
+      <div class="small-1 columns">
+      &nbsp;
+      </div>
+      <div class="small-5 columns">
+        <img src="http://placehold.it/500x400" style="width: 100%">
+      </div>
+    </div>
+
+    <footer class="row">
+      <div class="small-12 columns">
+        <p> insert links to cal state, ect</p>
+      </div>
+    </footer>
+
+  </main>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
+
+<!-- https://jsbin.com/cojayu/edit?html,css,output -->
