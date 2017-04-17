@@ -21,13 +21,19 @@ main .row{
 .columns{
   /**outline: 1px solid blue;**/
 }
-@media  only screen and (max-width: 1000px){
+@media  only screen and (max-width: 640px){
   .column{
   }
   .navlink{
     font-size: 60%;
 
   }
+}
+@media  only screen and (max-width: 1024px){
+  .navlink{
+    font-size: 80%;
+  }
+
 }
 /*.topnav{
   overflow: hidden;
@@ -90,6 +96,13 @@ h1, h2, h3, h4{
   text-align: center;
 }
 
+.contactform{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.contactform input, textarea{
+  border-radius: 10px;
+}
 
 
 /* CSS - Cascading Style Sheet */
